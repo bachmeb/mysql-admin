@@ -16,3 +16,8 @@ Check that the MySQL Yum repository has been successfully added
 ```
 yum repolist enabled | grep "mysql.*-community.*"
 ```
+
+##### Install Mysql Community Server
+```
+sudo yum install mysql-community-server
+```
