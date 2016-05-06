@@ -13,6 +13,11 @@ mysqlshow -u root -p
 mysqlshow -u root -p database_name
 ```
 
+##### See which tables exist in a database and count the rows in each
+```
+mysqlshow -u root -p database_name --count
+```
+
 ##### Help
 ```
 mysqlshow --help
