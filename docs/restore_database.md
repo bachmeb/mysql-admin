@@ -2,6 +2,7 @@
 
 ## References
 * http://stackoverflow.com/questions/105776/how-do-i-restore-a-mysql-dump-file
+* https://www.garron.me/en/articles/mysql-backup-restore.html
 
 ### Restore dump file (if the dump file includes a CREATE db command at the top)
 ```
