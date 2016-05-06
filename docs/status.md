@@ -1,7 +1,7 @@
 # status
 
 ## References
-* 
+* https://dev.mysql.com/doc/refman/5.0/en/installation-version.html
 
 ```
 status
