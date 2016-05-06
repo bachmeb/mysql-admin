@@ -2,6 +2,7 @@
 
 ## References
 * http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
+* http://dba.stackexchange.com/questions/97058/mysql-unknown-column-password-last-changed
 
 ##### Connect as root
 ```
@@ -10,12 +11,15 @@ mysql --user=root mysql -p
 
 ##### 
 ```
-mysql> CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
+mysql> CREATE USER 'bachmeb'@'localhost' IDENTIFIED BY 'some_pass';
 ```
+
+##### Exit and run mysql_upgrade, if running CREATE USER returns an error about an unknown column
+* [/docs/mysql_upgrade.md](/docs/mysql_upgrade.md)
 
 ##### 
 ```
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost'
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'bachmeb'@'localhost'
     ->     WITH GRANT OPTION;
 ```
 
