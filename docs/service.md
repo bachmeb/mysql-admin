@@ -7,3 +7,8 @@
 ```
 sudo /sbin/service mysqld start --user=mysql
 ```
+
+##### Start the Mysql service with the --skip-grant-tables option.
+```
+sudo /sbin/service mysqld start --skip-grant-tables
+```
