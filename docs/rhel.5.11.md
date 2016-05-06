@@ -59,9 +59,6 @@ mysql_secure_installation
 ```
 ```c
 /*
-
-[bachmeb@99700hlzx6g1 ~]$ mysql_secure_installation
-
 Securing the MySQL server deployment.
 
 Enter password for user root:
