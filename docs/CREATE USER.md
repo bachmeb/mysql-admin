@@ -40,6 +40,7 @@ mysql> CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin_pass';
 ```
 
 ##### Granted admin the RELOAD and PROCESS administrative privileges
+* *These privileges enable the admin user to execute the mysqladmin reload, mysqladmin refresh, and mysqladmin flush-xxx commands, as well as mysqladmin processlist.* (http://dev.mysql.com/doc/refman/5.7/en/adding-users.html)
 ```
 mysql> GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
 ```
