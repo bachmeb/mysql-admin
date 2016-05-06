@@ -9,6 +9,7 @@ mysql --user=root mysql -p
 ```
 
 ##### 
+```
 mysql> CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost'
     ->     WITH GRANT OPTION;
@@ -18,3 +19,4 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%'
 mysql> CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin_pass';
 mysql> GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
 mysql> CREATE USER 'dummy'@'localhost';
+```
