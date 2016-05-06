@@ -13,7 +13,7 @@
 sudo rpm -Uvh mysql57-community-release-el5-{version-number}.noarch.rpm
 ```
 
-Check that the MySQL Yum repository has been successfully added
+##### Check that the MySQL Yum repository has been successfully added
 ```
 yum repolist enabled | grep "mysql.*-community.*"
 ```
