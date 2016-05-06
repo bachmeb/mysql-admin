@@ -3,7 +3,7 @@
 ## References
 * http://stackoverflow.com/questions/105776/how-do-i-restore-a-mysql-dump-file
 
-### Restore dump file (if the dump file include a CREATE db command at the top)
+### Restore dump file (if the dump file includes a CREATE db command at the top)
 ```
 mysql -u <user> -p < db_backup.dump
 ```
