@@ -43,7 +43,7 @@ UPDATE user SET Password=PASSWORD('my_password') where USER='root';
 UPDATE user SET authentication_string=password('my_password') where user='root';
 ```
 
-##### Flush privilidges
+##### Flush privileges
 ```
 FLUSH PRIVILEGES;
 ```
