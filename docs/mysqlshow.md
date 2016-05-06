@@ -7,3 +7,8 @@
 ```
 mysqlshow -u root -p
 ```
+
+##### See which tables exist in a database
+```
+mysqlshow -u root -p database_name
+```
