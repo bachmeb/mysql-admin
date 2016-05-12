@@ -8,6 +8,15 @@
 * http://dev.mysql.com/downloads/repo/yum/
 * http://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
 
+
+##### See if a MySQL Yum repository has already been added
+```
+yum repolist enabled | grep "mysql.*-community.*"
+```
+```
+ls -l /etc/yum.repos.d/
+```
+
 ##### Install the downloaded release package
 ```
 sudo rpm -Uvh mysql57-community-release-el5-{version-number}.noarch.rpm
