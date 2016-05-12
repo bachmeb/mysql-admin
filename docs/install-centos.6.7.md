@@ -291,9 +291,25 @@ Complete!
 sudo yum list installed | grep mysql
 ```
 
+##### Check the status of the mysqld service
+```
+sudo /sbin/service mysqld status
+```
+```c
+/*
+mysqld is stopped
+*/
+```
+
 ##### Start the Mysql service with the --skip-grant-tables option.
 ```
 sudo /sbin/service mysqld start --skip-grant-tables
+```
+```c
+/*
+Initializing MySQL database
+Starting mysqld:                                           [  OK  ]
+*/
 ```
 
 ##### Connect as root
@@ -303,22 +319,27 @@ mysql -u root mysql
 
 ##### UPDATE the Password
 ```
-UPDATE user SET Password=PASSWORD('my_password') where USER='root';
+mysql> UPDATE user SET Password=PASSWORD('my_password') where USER='root';
 ```
 
 ##### If UPDATE Password fails, try UPDATE authentication_string
 ```
-UPDATE user SET authentication_string=password('my_password') where user='root';
+mysql> UPDATE user SET authentication_string=password('my_password') where user='root';
 ```
 
 ##### Flush privileges
 ```
-FLUSH PRIVILEGES;
+mysql> FLUSH PRIVILEGES;
+```
+
+##### Exit
+```
+mysql> exit
 ```
 
 ##### Restart the instance/daemon without the --skip-grant-tables option.
 ```
-sudo /sbin/service mysql restart
+sudo /sbin/service mysqld restart
 ```
 
 ##### Secure the Mysql installation
