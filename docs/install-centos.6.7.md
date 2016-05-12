@@ -199,11 +199,10 @@ Complete!
 
 ##### Install Mysql Server 5.7
 ```
-sudo yum install mysqlasdfasdfasdfasdf
+sudo yum install mysql57u-server
 ```
 ```c
 /*
-sudo yum install mysql57u-server
 Loaded plugins: fastestmirror, refresh-packagekit
 Setting up Install Process
 Loading mirror speeds from cached hostfile
