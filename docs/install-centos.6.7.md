@@ -33,6 +33,7 @@ mysql57u-libs.x86_64 : The shared libraries required for MySQL clients
 ##### Erase 
 ```
 sudo yum erase mysql-libs
+```
 ```c
 /*
 Loaded plugins: fastestmirror, refresh-packagekit
