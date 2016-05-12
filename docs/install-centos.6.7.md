@@ -287,6 +287,11 @@ Complete!
 */
 ```
 
+##### List all of the installed mysql packages
+```
+sudo yum list installed | grep mysql
+```
+
 ##### Start the Mysql service with the --skip-grant-tables option.
 ```
 sudo /sbin/service mysqld start --skip-grant-tables
