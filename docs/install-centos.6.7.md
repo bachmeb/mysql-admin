@@ -197,11 +197,95 @@ Complete!
 */
 ```
 
-##### Install Mysql Community Server
+##### Install Mysql Server 5.7
 ```
 sudo yum install mysqlasdfasdfasdfasdf
 ```
+```c
+/*
+sudo yum install mysql57u-server
+Loaded plugins: fastestmirror, refresh-packagekit
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+ * base: chicago.gaminghost.co
+ * epel: mirror.steadfast.net
+ * extras: centos.chi.host-engine.com
+ * ius: iad.mirror.rackspace.com
+ * updates: mirror.steadfast.net
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql57u-server.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Processing Dependency: mysql57u-errmsg(x86-64) = 5.7.12-1.ius.centos6 for package: mysql57u-server-5.7.12-1.ius.centos6.x86_64
+--> Processing Dependency: mysql-compat-client(x86-64) for package: mysql57u-server-5.7.12-1.ius.centos6.x86_64
+--> Processing Dependency: mysql(x86-64) for package: mysql57u-server-5.7.12-1.ius.centos6.x86_64
+--> Processing Dependency: liblz4.so.1()(64bit) for package: mysql57u-server-5.7.12-1.ius.centos6.x86_64
+--> Processing Dependency: libevent-1.4.so.2()(64bit) for package: mysql57u-server-5.7.12-1.ius.centos6.x86_64
+--> Running transaction check
+---> Package libevent.x86_64 0:1.4.13-4.el6 will be installed
+---> Package lz4.x86_64 0:r131-1.el6 will be installed
+---> Package mysql57u.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Processing Dependency: mysqlclient16 for package: mysql57u-5.7.12-1.ius.centos6.x86_64
+---> Package mysql57u-errmsg.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Running transaction check
+---> Package mysqlclient16.x86_64 0:5.1.61-4.ius.centos6 will be installed
+--> Finished Dependency Resolution
 
+Dependencies Resolved
+
+===============================================================================================================================================================
+ Package                                  Arch                            Version                                          Repository                     Size
+===============================================================================================================================================================
+Installing:
+ mysql57u-server                          x86_64                          5.7.12-1.ius.centos6                             ius                            20 M
+Installing for dependencies:
+ libevent                                 x86_64                          1.4.13-4.el6                                     base                           66 k
+ lz4                                      x86_64                          r131-1.el6                                       epel                           63 k
+ mysql57u                                 x86_64                          5.7.12-1.ius.centos6                             ius                           9.6 M
+ mysql57u-errmsg                          x86_64                          5.7.12-1.ius.centos6                             ius                           322 k
+ mysqlclient16                            x86_64                          5.1.61-4.ius.centos6                             ius                           1.4 M
+
+Transaction Summary
+===============================================================================================================================================================
+Install       6 Package(s)
+
+Total size: 32 M
+Total download size: 21 M
+Installed size: 140 M
+Is this ok [y/N]: y
+
+Downloading Packages:
+(1/3): libevent-1.4.13-4.el6.x86_64.rpm                                                                                                 |  66 kB     00:00
+(2/3): mysql57u-errmsg-5.7.12-1.ius.centos6.x86_64.rpm                                                                                  | 322 kB     00:00
+(3/3): mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm                                                                                  |  20 MB     00:16
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                          1.2 MB/s |  21 MB     00:17
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : lz4-r131-1.el6.x86_64                                                                                                                       1/6
+  Installing : libevent-1.4.13-4.el6.x86_64                                                                                                                2/6
+  Installing : mysqlclient16-5.1.61-4.ius.centos6.x86_64                                                                                                   3/6
+  Installing : mysql57u-5.7.12-1.ius.centos6.x86_64                                                                                                        4/6
+  Installing : mysql57u-errmsg-5.7.12-1.ius.centos6.x86_64                                                                                                 5/6
+  Installing : mysql57u-server-5.7.12-1.ius.centos6.x86_64                                                                                                 6/6
+  Verifying  : mysql57u-errmsg-5.7.12-1.ius.centos6.x86_64                                                                                                 1/6
+  Verifying  : mysqlclient16-5.1.61-4.ius.centos6.x86_64                                                                                                   2/6
+  Verifying  : libevent-1.4.13-4.el6.x86_64                                                                                                                3/6
+  Verifying  : mysql57u-5.7.12-1.ius.centos6.x86_64                                                                                                        4/6
+  Verifying  : mysql57u-server-5.7.12-1.ius.centos6.x86_64                                                                                                 5/6
+  Verifying  : lz4-r131-1.el6.x86_64                                                                                                                       6/6
+
+Installed:
+  mysql57u-server.x86_64 0:5.7.12-1.ius.centos6
+
+Dependency Installed:
+  libevent.x86_64 0:1.4.13-4.el6               lz4.x86_64 0:r131-1.el6  mysql57u.x86_64 0:5.7.12-1.ius.centos6  mysql57u-errmsg.x86_64 0:5.7.12-1.ius.centos6
+  mysqlclient16.x86_64 0:5.1.61-4.ius.centos6
+
+Complete!
+*/
+```
 
 ##### Start the Mysql service with the --skip-grant-tables option.
 ```
