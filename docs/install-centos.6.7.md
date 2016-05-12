@@ -128,7 +128,72 @@ Complete!
 
 ##### Install the 5.7 version of mysql-libs
 ```
+sudo yum install mysql57u-libs
+```
+```c
+/*
+Loaded plugins: fastestmirror, refresh-packagekit
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+ * base: chicago.gaminghost.co
+ * epel: mirror.steadfast.net
+ * extras: centos.chi.host-engine.com
+ * ius: ord.mirror.rackspace.com
+ * updates: mirror.steadfast.net
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql57u-libs.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Processing Dependency: mysql57u-common(x86-64) = 5.7.12-1.ius.centos6 for package: mysql57u-libs-5.7.12-1.ius.centos6.x86_64
+--> Running transaction check
+---> Package mysql57u-common.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Processing Dependency: /etc/my.cnf for package: mysql57u-common-5.7.12-1.ius.centos6.x86_64
+--> Running transaction check
+---> Package mysql57u-config.x86_64 0:5.7.12-1.ius.centos6 will be installed
+--> Finished Dependency Resolution
 
+Dependencies Resolved
+
+===============================================================================================================================================================
+ Package                                   Arch                             Version                                        Repository                     Size
+===============================================================================================================================================================
+Installing:
+ mysql57u-libs                             x86_64                           5.7.12-1.ius.centos6                           ius                           902 k
+Installing for dependencies:
+ mysql57u-common                           x86_64                           5.7.12-1.ius.centos6                           ius                            84 k
+ mysql57u-config                           x86_64                           5.7.12-1.ius.centos6                           ius                            56 k
+
+Transaction Summary
+===============================================================================================================================================================
+Install       3 Package(s)
+
+Total size: 1.0 M
+Total download size: 958 k
+Installed size: 3.9 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/2): mysql57u-config-5.7.12-1.ius.centos6.x86_64.rpm                                                                                  |  56 kB     00:00
+(2/2): mysql57u-libs-5.7.12-1.ius.centos6.x86_64.rpm                                                                                    | 902 kB     00:00
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                          1.2 MB/s | 958 kB     00:00
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : mysql57u-config-5.7.12-1.ius.centos6.x86_64                                                                                                 1/3
+  Installing : mysql57u-common-5.7.12-1.ius.centos6.x86_64                                                                                                 2/3
+  Installing : mysql57u-libs-5.7.12-1.ius.centos6.x86_64                                                                                                   3/3
+  Verifying  : mysql57u-libs-5.7.12-1.ius.centos6.x86_64                                                                                                   1/3
+  Verifying  : mysql57u-config-5.7.12-1.ius.centos6.x86_64                                                                                                 2/3
+  Verifying  : mysql57u-common-5.7.12-1.ius.centos6.x86_64                                                                                                 3/3
+
+Installed:
+  mysql57u-libs.x86_64 0:5.7.12-1.ius.centos6
+
+Dependency Installed:
+  mysql57u-common.x86_64 0:5.7.12-1.ius.centos6                                  mysql57u-config.x86_64 0:5.7.12-1.ius.centos6
+
+Complete!
+*/
 ```
 
 ##### Install Mysql Community Server
