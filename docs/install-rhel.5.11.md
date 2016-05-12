@@ -19,7 +19,7 @@ ls -l /etc/yum.repos.d/
 
 ##### Install the downloaded release package
 ```
-sudo rpm -Uvh mysql57-community-release-el5-{version-number}.noarch.rpm
+sudo rpm -Uvh mysql57-community-release-{ MAKE SURE YOU ARE USING THE CORRECT VERSION FOR YOUR OS }.noarch.rpm
 ```
 
 ##### Check that the MySQL Yum repository has been successfully added
