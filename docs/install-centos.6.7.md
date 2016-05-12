@@ -13,28 +13,37 @@ yum repolist enabled | grep "mysql.*-community.*"
 ls -l /etc/yum.repos.d/
 ```
 
-##### Get a link to the IUS repo for mysql57u-server
-* https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/repoview/mysql57u-server.html
+##### Add the IUS repo
+* https://github.com/bachmeb/linux-admin/blob/master/docs/ius/centos.6.7.md
 
-##### Download the IUS repo
+##### Search for mysql server
 ```
-cd ~
-wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm
+sudo yum search mysql | grep server
 ```
-```
+```c
 /*
---2016-05-12 16:11:49--  https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm
-Resolving dl.iuscommunity.org... 104.130.201.30, 2001:4801:7827:102:bddb:e4a6:b702:d4ab
-Connecting to dl.iuscommunity.org|104.130.201.30|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 21387156 (20M) [application/x-rpm]
-Saving to: “mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm”
-
-100%[=====================================================================================================================>] 21,387,156  4.64M/s   in 4.8s
-
-2016-05-12 16:11:53 (4.29 MB/s) - “mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm” saved [21387156/21387156]
+dpm-copy-server-mysql.x86_64 : DPM copy server with MySQL database back-end
+dpm-name-server-mysql.x86_64 : DPM name server with MySQL database back-end
+dpm-server-mysql.x86_64 : Disk Pool Manager (DPM) server with MySQL database
+dpm-srm-server-mysql.x86_64 : DPM SRM server with MySQL database back-end
+lfc-server-mysql.x86_64 : LCG File Catalog (LFC) server with MySQL database
+mod_auth_mysql.x86_64 : Basic authentication for the Apache web server using a
+mysql-server.x86_64 : The MySQL server and related files
+mysql55-server.x86_64 : The MySQL server and related files
+mysql56u-common.x86_64 : The shared files required for MySQL server and client
+mysql56u-server.x86_64 : The MySQL server and related files
+mysql57u-common.x86_64 : The shared files required for MySQL server and client
+mysql57u-server.x86_64 : The MySQL server and related files
+proftpd-mysql.x86_64 : Module to add MySQL support to the ProFTPD FTP server
+voms-mysql-plugin.x86_64 : VOMS server plugin for MySQL
+zabbix-server-mysql.x86_64 : Zabbix server compiled to use MySQL
+zabbix20-server-mysql.x86_64 : Zabbix server compiled to use MySQL
+zabbix22-server-mysql.x86_64 : Zabbix server compiled to use MySQL
+mysql57u-config.x86_64 : The config files required by server and client
+mysql57u-errmsg.x86_64 : The error messages files required by server and
 */
 ```
+
 
 ##### Install Mysql Community Server
 ```
