@@ -16,39 +16,25 @@ ls -l /etc/yum.repos.d/
 ##### Add the IUS repo
 * https://github.com/bachmeb/linux-admin/blob/master/docs/ius/centos.6.7.md
 
-##### Search for mysql server
+##### Search for mysql libs
 ```
-sudo yum search mysql | grep server
+sudo yum search mysql | grep libs
 ```
 ```c
 /*
-dpm-copy-server-mysql.x86_64 : DPM copy server with MySQL database back-end
-dpm-name-server-mysql.x86_64 : DPM name server with MySQL database back-end
-dpm-server-mysql.x86_64 : Disk Pool Manager (DPM) server with MySQL database
-dpm-srm-server-mysql.x86_64 : DPM SRM server with MySQL database back-end
-lfc-server-mysql.x86_64 : LCG File Catalog (LFC) server with MySQL database
-mod_auth_mysql.x86_64 : Basic authentication for the Apache web server using a
-mysql-server.x86_64 : The MySQL server and related files
-mysql55-server.x86_64 : The MySQL server and related files
-mysql56u-common.x86_64 : The shared files required for MySQL server and client
-mysql56u-server.x86_64 : The MySQL server and related files
-mysql57u-common.x86_64 : The shared files required for MySQL server and client
-mysql57u-server.x86_64 : The MySQL server and related files
-proftpd-mysql.x86_64 : Module to add MySQL support to the ProFTPD FTP server
-voms-mysql-plugin.x86_64 : VOMS server plugin for MySQL
-zabbix-server-mysql.x86_64 : Zabbix server compiled to use MySQL
-zabbix20-server-mysql.x86_64 : Zabbix server compiled to use MySQL
-zabbix22-server-mysql.x86_64 : Zabbix server compiled to use MySQL
-mysql57u-config.x86_64 : The config files required by server and client
-mysql57u-errmsg.x86_64 : The error messages files required by server and
+mysql-libs.i686 : The shared libraries required for MySQL clients
+mysql-libs.x86_64 : The shared libraries required for MySQL clients
+mysql55-libs.x86_64 : The shared libraries required for MySQL clients
+mysql56u-libs.x86_64 : The shared libraries required for MySQL clients
+mysql57u-libs.x86_64 : The shared libraries required for MySQL clients
 */
 ```
 
-
 ##### Install Mysql Community Server
 ```
-sudo yum install mysql-community-server
+sudo yum install mysqlasdfasdfasdfasdf
 ```
+
 
 ##### Start the Mysql service with the --skip-grant-tables option.
 ```
