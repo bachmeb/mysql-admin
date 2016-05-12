@@ -13,7 +13,28 @@ yum repolist enabled | grep "mysql.*-community.*"
 ls -l /etc/yum.repos.d/
 ```
 
+##### Get a link to the IUS repo for mysql57u-server
+* https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/repoview/mysql57u-server.html
 
+##### Download the IUS repo
+```
+cd ~
+wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm
+```
+```
+/*
+--2016-05-12 16:11:49--  https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm
+Resolving dl.iuscommunity.org... 104.130.201.30, 2001:4801:7827:102:bddb:e4a6:b702:d4ab
+Connecting to dl.iuscommunity.org|104.130.201.30|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21387156 (20M) [application/x-rpm]
+Saving to: “mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm”
+
+100%[=====================================================================================================================>] 21,387,156  4.64M/s   in 4.8s
+
+2016-05-12 16:11:53 (4.29 MB/s) - “mysql57u-server-5.7.12-1.ius.centos6.x86_64.rpm” saved [21387156/21387156]
+*/
+```
 
 ##### Install Mysql Community Server
 ```
