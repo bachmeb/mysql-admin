@@ -30,6 +30,107 @@ mysql57u-libs.x86_64 : The shared libraries required for MySQL clients
 */
 ```
 
+##### Erase 
+```
+sudo yum erase mysql-libs
+```c
+/*
+Loaded plugins: fastestmirror, refresh-packagekit
+Setting up Remove Process
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql-libs.x86_64 0:5.1.73-5.el6_7.1 will be erased
+--> Processing Dependency: libmysqlclient.so.16()(64bit) for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Processing Dependency: libmysqlclient.so.16(libmysqlclient_16)(64bit) for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Processing Dependency: mysql-libs for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Running transaction check
+---> Package postfix.x86_64 2:2.6.6-6.el6_7.1 will be erased
+--> Processing Dependency: /usr/sbin/sendmail for package: redhat-lsb-core-4.0-7.el6.centos.x86_64
+--> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-15.el6_7.1.x86_64
+--> Running transaction check
+---> Package cronie.x86_64 0:1.4.4-15.el6_7.1 will be erased
+--> Processing Dependency: cronie = 1.4.4-15.el6_7.1 for package: cronie-anacron-1.4.4-15.el6_7.1.x86_64
+---> Package redhat-lsb-core.x86_64 0:4.0-7.el6.centos will be erased
+--> Processing Dependency: redhat-lsb-core(x86-64) = 4.0 for package: redhat-lsb-printing-4.0-7.el6.centos.x86_64
+--> Processing Dependency: redhat-lsb-core(x86-64) = 4.0 for package: redhat-lsb-graphics-4.0-7.el6.centos.x86_64
+--> Running transaction check
+---> Package cronie-anacron.x86_64 0:1.4.4-15.el6_7.1 will be erased
+---> Package redhat-lsb-graphics.x86_64 0:4.0-7.el6.centos will be erased
+---> Package redhat-lsb-printing.x86_64 0:4.0-7.el6.centos will be erased
+--> Processing Dependency: /etc/cron.d for package: crontabs-1.10-33.el6.noarch
+--> Processing Dependency: /etc/cron.d for package: sysstat-9.0.4-27.el6.x86_64
+--> Restarting Dependency Resolution with new changes.
+--> Running transaction check
+---> Package crontabs.noarch 0:1.10-33.el6 will be erased
+---> Package sysstat.x86_64 0:9.0.4-27.el6 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+===============================================================================================================================================================
+ Package                             Arch                   Version                             Repository                                                Size
+===============================================================================================================================================================
+Removing:
+ mysql-libs                          x86_64                 5.1.73-5.el6_7.1                    @updates                                                 4.0 M
+Removing for dependencies:
+ cronie                              x86_64                 1.4.4-15.el6_7.1                    @updates                                                 174 k
+ cronie-anacron                      x86_64                 1.4.4-15.el6_7.1                    @updates                                                  43 k
+ crontabs                            noarch                 1.10-33.el6                         @anaconda-CentOS-201508042137.x86_64/6.7                 2.4 k
+ postfix                             x86_64                 2:2.6.6-6.el6_7.1                   @updates                                                 9.7 M
+ redhat-lsb-core                     x86_64                 4.0-7.el6.centos                    @base                                                     22 k
+ redhat-lsb-graphics                 x86_64                 4.0-7.el6.centos                    @base                                                    0.0
+ redhat-lsb-printing                 x86_64                 4.0-7.el6.centos                    @base                                                    0.0
+ sysstat                             x86_64                 9.0.4-27.el6                        @base                                                    825 k
+
+Transaction Summary
+===============================================================================================================================================================
+Remove        9 Package(s)
+
+Installed size: 15 M
+Is this ok [y/N]: y
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+Warning: RPMDB altered outside of yum.
+  Erasing    : redhat-lsb-graphics-4.0-7.el6.centos.x86_64                                                                                                 1/9
+  Erasing    : redhat-lsb-printing-4.0-7.el6.centos.x86_64                                                                                                 2/9
+  Erasing    : redhat-lsb-core-4.0-7.el6.centos.x86_64                                                                                                     3/9
+/var/tmp/rpm-tmp.FT50wp: line 1: lsb_release: command not found
+  Erasing    : sysstat-9.0.4-27.el6.x86_64                                                                                                                 4/9
+  Erasing    : crontabs-1.10-33.el6.noarch                                                                                                                 5/9
+  Erasing    : cronie-anacron-1.4.4-15.el6_7.1.x86_64                                                                                                      6/9
+  Erasing    : cronie-1.4.4-15.el6_7.1.x86_64                                                                                                              7/9
+  Erasing    : 2:postfix-2.6.6-6.el6_7.1.x86_64                                                                                                            8/9
+  Erasing    : mysql-libs-5.1.73-5.el6_7.1.x86_64                                                                                                          9/9
+  Verifying  : cronie-1.4.4-15.el6_7.1.x86_64                                                                                                              1/9
+  Verifying  : cronie-anacron-1.4.4-15.el6_7.1.x86_64                                                                                                      2/9
+  Verifying  : redhat-lsb-printing-4.0-7.el6.centos.x86_64                                                                                                 3/9
+  Verifying  : redhat-lsb-core-4.0-7.el6.centos.x86_64                                                                                                     4/9
+  Verifying  : mysql-libs-5.1.73-5.el6_7.1.x86_64                                                                                                          5/9
+  Verifying  : sysstat-9.0.4-27.el6.x86_64                                                                                                                 6/9
+  Verifying  : crontabs-1.10-33.el6.noarch                                                                                                                 7/9
+  Verifying  : redhat-lsb-graphics-4.0-7.el6.centos.x86_64                                                                                                 8/9
+  Verifying  : 2:postfix-2.6.6-6.el6_7.1.x86_64                                                                                                            9/9
+
+Removed:
+  mysql-libs.x86_64 0:5.1.73-5.el6_7.1
+
+Dependency Removed:
+  cronie.x86_64 0:1.4.4-15.el6_7.1                      cronie-anacron.x86_64 0:1.4.4-15.el6_7.1          crontabs.noarch 0:1.10-33.el6
+  postfix.x86_64 2:2.6.6-6.el6_7.1                      redhat-lsb-core.x86_64 0:4.0-7.el6.centos         redhat-lsb-graphics.x86_64 0:4.0-7.el6.centos
+  redhat-lsb-printing.x86_64 0:4.0-7.el6.centos         sysstat.x86_64 0:9.0.4-27.el6
+
+Complete!
+*/
+```
+
+##### Install the 5.7 version of mysql-libs
+```
+
+```
+
 ##### Install Mysql Community Server
 ```
 sudo yum install mysqlasdfasdfasdfasdf
