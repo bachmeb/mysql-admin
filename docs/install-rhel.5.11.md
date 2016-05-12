@@ -12,8 +12,8 @@ yum repolist enabled | grep "mysql.*-community.*"
 ls -l /etc/yum.repos.d/
 ```
 ##### Download MySQL Yum Repository
-* http://dev.mysql.com/downloads/repo/yum/
-  * Red Hat Enterprise Linux 5 / Oracle Linux 5 (Architecture Independent), RPM Package
+* Red Hat Enterprise Linux 5 / Oracle Linux 5 (Architecture Independent), RPM Package
+  * http://dev.mysql.com/downloads/repo/yum/
     * mysql57-community-release-el5-7.noarch.rpm
 
 ##### Install the downloaded release package
