@@ -4,6 +4,7 @@
 * http://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
 * https://kb.plesk.com/en/128655
 * http://serverfault.com/questions/759828/error-while-installing-mysql-on-centos-6-7
+* http://stackoverflow.com/questions/1559955/host-xxx-xx-xxx-xxx-is-not-allowed-to-connect-to-this-mysql-server
 
 ##### See if a MySQL Yum repository has already been added
 ```
@@ -415,4 +416,11 @@ All done!
 ##### Connect to mysql as root with the new password
 ```
 mysql -u root -p
+```
+
+##### Create a user who can connect to the mysql server from a remote host
+```
+mysql> CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%'
+    -> WITH GRANT OPTION;
 ```
