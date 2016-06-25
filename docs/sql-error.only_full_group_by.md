@@ -4,6 +4,7 @@
 * http://craftcms.stackexchange.com/questions/12084/getting-this-sql-error-group-by-incompatible-with-sql-mode-only-full-group-by/12106
 * http://stackoverflow.com/questions/23921117/disable-only-full-group-by
 * http://rpbouman.blogspot.com/2014/09/mysql-575-group-by-respects-functional.html
+* http://dev.mysql.com/doc/refman/5.7/en/sql-mode.html
 
 
 ```
