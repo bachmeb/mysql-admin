@@ -42,3 +42,6 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n';
 ```
+```
+Query OK, 40543 rows affected (0.18 sec)
+```
