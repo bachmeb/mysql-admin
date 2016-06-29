@@ -13,3 +13,8 @@ mysqldump -u root -p --all-databases --verbose
 ```
 mysql -u <user> -p < db_backup.dump
 ```
+
+##### Restore all databases dump file
+```
+mysql> source db_backup.dump;
+```
