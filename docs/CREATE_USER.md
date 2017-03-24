@@ -3,6 +3,7 @@
 ## References
 * http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
 * http://dba.stackexchange.com/questions/97058/mysql-unknown-column-password-last-changed
+* http://stackoverflow.com/questions/1135245/how-to-get-a-list-of-mysql-user-accounts
 
 ##### Connect as root
 ```
@@ -48,4 +49,9 @@ mysql> GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
 ##### Craete an account that has no password (which is insecure and not recommended)
 ```
 mysql> CREATE USER 'dummy'@'localhost';
+```
+
+##### List all users
+```
+mysql> SELECT User FROM mysql.user;
 ```
