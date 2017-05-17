@@ -93,12 +93,18 @@ mysql> CREATE USER 'dummy'@'localhost';
 ```sql
 mysql> CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';
 ```
-
+##### See the user
+```
+select * from user where User='monty';
+```
 ##### Grant all privileges to the user that can connect from any host
 ```sql
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%' WITH GRANT OPTION;
 ```
-
+##### See the user
+```
+select * from user where User='monty';
+```
 ##### Granted admin the RELOAD and PROCESS administrative privileges
 * *These privileges enable the admin user to execute the mysqladmin reload, mysqladmin refresh, and mysqladmin flush-xxx commands, as well as mysqladmin processlist.* (http://dev.mysql.com/doc/refman/5.7/en/adding-users.html)
 ```
