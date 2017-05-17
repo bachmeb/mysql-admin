@@ -131,3 +131,7 @@ mysql> CREATE USER 'custom'@'localhost' IDENTIFIED BY 'obscure';
 ```
 mysql> GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON bankaccount.* TO 'custom'@'localhost';
 ```    
+##### Grant all on one database
+```
+GRANT ALL ON db1.* TO 'jeffrey'@'localhost';
+```
