@@ -105,6 +105,18 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%' WITH GRANT OPTION;
 ```
 select * from user where User='monty';
 ```
+##### Show grants for monty
+```
+SHOW GRANTS FOR 'monty';
+```
+```
++-----------------------------------+
+| Grants for monty@%                |
++-----------------------------------+
+| GRANT USAGE ON *.* TO 'monty'@'%' |
++-----------------------------------+
+1 row in set (0.00 sec)
+```
 ##### Granted admin the RELOAD and PROCESS administrative privileges
 * *These privileges enable the admin user to execute the mysqladmin reload, mysqladmin refresh, and mysqladmin flush-xxx commands, as well as mysqladmin processlist.* (http://dev.mysql.com/doc/refman/5.7/en/adding-users.html)
 ```
