@@ -5,5 +5,10 @@
 
 ##### Set root password on localhost
 ```sql
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('mydb123');
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('asdfasdfasdf');
+```
+
+##### Set root password from any host
+```sql
+SET PASSWORD FOR 'root'@'%' = PASSWORD('asdfasdfasdf');
 ```
