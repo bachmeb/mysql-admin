@@ -1,7 +1,7 @@
 
 ### Create DB in Azure
 
-* Set time_zone
+#### Set time_zone
 ```
 -05:00
 ```
